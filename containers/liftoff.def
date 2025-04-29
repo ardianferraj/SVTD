@@ -1,0 +1,28 @@
+Bootstrap: docker
+From: python:3.10
+
+%labels
+    Maintainer YourName
+    Version 1.0
+    Description "Singularity container with Liftoff + Minimap2 (no root required)"
+
+%post
+    # Everything already installed in base image
+    pip install --upgrade pip
+
+    # Install minimap2 (precompiled binary)
+    curl -L https://github.com/lh3/minimap2/releases/download/v2.29/minimap2-2.29_x64-linux.tar.bz2 | tar --no-same-owner -jxvf -
+    cp minimap2-2.29_x64-linux/minimap2 /usr/local/bin/minimap2
+    chmod +x /usr/local/bin/minimap2
+
+    # Install Liftoff
+    git clone https://github.com/agshumate/Liftoff liftoff
+    cd liftoff
+    python3 setup.py install
+    pip install Liftoff
+
+%environment
+    export PATH=/usr/local/bin:$PATH
+
+%runscript
+    exec "$@"
