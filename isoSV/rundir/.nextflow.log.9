@@ -1,0 +1,118 @@
+May-14 16:51:52.997 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/isoSV.nf -work-dir /flashscratch/c-ferraa/isoSV/dev/work -resume
+May-14 16:51:53.247 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.1
+May-14 16:51:53.323 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/c-ferraa/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
+May-14 16:51:53.387 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-14 16:51:53.389 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-14 16:51:53.395 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+May-14 16:51:53.419 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-14 16:51:53.500 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/nextflow.config
+May-14 16:51:53.506 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/nextflow.config
+May-14 16:51:53.580 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/c-ferraa/.nextflow/secrets/store.json
+May-14 16:51:53.587 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@61a91912] - activable => nextflow.secret.LocalSecretsProvider@61a91912
+May-14 16:51:53.599 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-14 16:51:54.479 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+May-14 16:51:54.506 [main] DEBUG nextflow.cli.CmdRun - Launching `/projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/isoSV.nf` [mighty_kalam] DSL2 - revision: 35679e1df8
+May-14 16:51:54.509 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-14 16:51:54.509 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-14 16:51:54.655 [main] DEBUG nextflow.Session - Session UUID: 0947c220-c721-413b-af1c-ecce81be425d
+May-14 16:51:54.656 [main] DEBUG nextflow.Session - Run name: mighty_kalam
+May-14 16:51:54.656 [main] DEBUG nextflow.Session - Executor pool size: 2
+May-14 16:51:54.669 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-14 16:51:54.676 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-14 16:51:54.720 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.1 build 5946
+  Created: 12-05-2025 07:23 UTC (03:23 EDT)
+  System: Linux 5.14.0-503.22.1.el9_5.x86_64
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 2206444@sumner041 [10.5.35.41]
+  CPUs: 2 - Mem: 754.6 GB (12 GB) - Swap: 16 GB (6.9 GB)
+May-14 16:51:55.011 [main] DEBUG nextflow.Session - Work-dir: /flashscratch/c-ferraa/isoSV/dev/work [nfs]
+May-14 16:51:55.043 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-14 16:51:55.057 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-14 16:51:55.067 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+May-14 16:51:55.126 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-14 16:51:55.141 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+May-14 16:51:55.364 [main] DEBUG nextflow.Session - Session start
+May-14 16:51:55.375 [main] DEBUG nextflow.Session - Using default localLib path: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/lib
+May-14 16:51:55.378 [main] DEBUG nextflow.Session - Adding to the classpath library: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/lib
+May-14 16:51:56.079 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-14 16:51:57.478 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+May-14 16:51:57.479 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-14 16:51:57.493 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+May-14 16:51:57.503 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+May-14 16:51:57.506 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+May-14 16:51:57.511 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+May-14 16:51:57.539 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'ISOSEQ_CLUSTER': maxForks=0; fair=false; array=0
+May-14 16:51:57.603 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+May-14 16:51:57.603 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-14 16:51:57.605 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PBMM2_INDEX': maxForks=0; fair=false; array=0
+May-14 16:51:57.635 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+May-14 16:51:57.635 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-14 16:51:57.636 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PBMM2_ALIGN': maxForks=0; fair=false; array=0
+May-14 16:51:57.650 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+May-14 16:51:57.650 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-14 16:51:57.651 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'ISOSEQ_COLLAPSE': maxForks=0; fair=false; array=0
+May-14 16:51:57.657 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: PIGEON_CLASSIFY, ISOSEQ_COLLAPSE, PBMM2_ALIGN, PBMM2_INDEX, ISOSEQ_CLUSTER
+May-14 16:51:57.661 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+May-14 16:51:57.668 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ISOSEQ_CLUSTER
+May-14 16:51:57.669 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PBMM2_INDEX
+May-14 16:51:57.669 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PBMM2_ALIGN
+May-14 16:51:57.669 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ISOSEQ_COLLAPSE
+May-14 16:51:57.686 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_c2d2fd687581d793: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/modules/pbmm2_align.nf
+  Script_4360e9320e822eb1: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/modules/pbmm2_index.nf
+  Script_f73d3d9b068597c0: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/modules/pigeon.nf
+  Script_008fe80c4860cb0c: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/bin/extract_csv.nf
+  Script_a1abad0d7a1254d8: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/isoSV.nf
+  Script_a512e364ceb7cc2b: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/modules/isoseq_collapse.nf
+  Script_c9cd2104d9caf25d: /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/modules/isoseq_cluster2.nf
+May-14 16:51:57.687 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-14 16:51:57.687 [main] DEBUG nextflow.Session - Session await
+May-14 16:51:57.691 [Actor Thread 3] INFO  nextflow.script.BaseScript - Sample info: [CAST_M_striatum, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf]
+May-14 16:51:58.017 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [1d/6719df] Cached process > PBMM2_INDEX (1)
+May-14 16:51:58.021 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [c5/3c3917] Cached process > ISOSEQ_CLUSTER (CAST_M_striatum)
+May-14 16:51:58.039 [Actor Thread 7] INFO  nextflow.script.BaseScript - Alignment input: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/c5/3c3917bcec9ae7d88b610885fa1020/CAST_M_striatum.clustered.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa.mmi]
+May-14 16:51:58.080 [Actor Thread 1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-14 16:51:58.081 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [fc/b24ba3] Cached process > PBMM2_ALIGN (CAST_M_striatum)
+May-14 16:51:58.094 [Actor Thread 5] INFO  nextflow.script.BaseScript - Mapped BAM: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/fc/b24ba3ee3d0a5e42ac97ba4facacc7/CAST_M_striatum_mapped.bam]
+May-14 16:51:58.363 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process ISOSEQ_COLLAPSE (CAST_M_striatum) > jobId: 5490976; workDir: /flashscratch/c-ferraa/isoSV/dev/work/27/285c9887721daa4bb7ceb060dade95
+May-14 16:51:58.363 [Task submitter] INFO  nextflow.Session - [27/285c98] Submitted process > ISOSEQ_COLLAPSE (CAST_M_striatum)
+May-14 16:52:02.539 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 5490976; id: 4; name: ISOSEQ_COLLAPSE (CAST_M_striatum); status: COMPLETED; exit: 1; error: -; workDir: /flashscratch/c-ferraa/isoSV/dev/work/27/285c9887721daa4bb7ceb060dade95 started: 1747255922518; exited: 2025-05-14T20:51:58.655087Z; ]
+May-14 16:52:02.541 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-14 16:52:02.558 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ISOSEQ_COLLAPSE (CAST_M_striatum); work-dir=/flashscratch/c-ferraa/isoSV/dev/work/27/285c9887721daa4bb7ceb060dade95
+  error [nextflow.exception.ProcessFailedException]: Process `ISOSEQ_COLLAPSE (CAST_M_striatum)` terminated with an error exit status (1)
+May-14 16:52:02.622 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ISOSEQ_COLLAPSE (CAST_M_striatum)'
+
+Caused by:
+  Process `ISOSEQ_COLLAPSE (CAST_M_striatum)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  isoseq collapse -j 32 --do-not-collapse-extra-5exons --output-fasta CAST_M_striatum_collapsed.fa CAST_M_striatum_mapped.bam CAST_M_striatum_collapsed.gff
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  isoseq collapse ERROR: [pbcopper] command line parser ERROR: unknown option 'output-fasta'
+
+Work dir:
+  /flashscratch/c-ferraa/isoSV/dev/work/27/285c9887721daa4bb7ceb060dade95
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+May-14 16:52:02.671 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-14 16:52:02.694 [TaskFinalizer-1] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+May-14 16:52:02.713 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
+May-14 16:52:02.713 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-14 16:52:02.716 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+May-14 16:52:02.717 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+May-14 16:52:02.724 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=3; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=640ms; cachedDuration=1d 8h 54m 46s;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=32; peakMemory=64 GB; ]
+May-14 16:52:02.901 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-14 16:52:02.946 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+May-14 16:52:02.947 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

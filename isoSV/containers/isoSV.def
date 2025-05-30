@@ -1,0 +1,22 @@
+Bootstrap: docker
+From: condaforge/mambaforge:23.3.1-1
+
+%environment
+    export DEBIAN_FRONTEND=noninteractive
+    export PATH=/opt/conda/bin:$PATH
+
+%post
+    echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+
+    # Install tools
+    mamba install -y -c bioconda -c conda-forge \
+        isoseq lima pbmm2 pbpigeon minimap2 samtools star kallisto desalt \
+        bx-python biopython bcbio-gff cython numpy pysam pybedtools psutil pandas scipy pybedtools
+
+    # Clone SQANTI3
+    cd /opt
+    git clone https://github.com/ConesaLab/SQANTI3.git
+    cd SQANTI3
+    git checkout v5.4
+    wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/gtfToGenePred -P src/utilities/
+    chmod +x src/utilities/gtfToGenePred

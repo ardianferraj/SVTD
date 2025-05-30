@@ -1,0 +1,27 @@
++ module load singularity
++ _module_raw load singularity
++ conda activate isoseq
+
+CondaError: Run 'conda init' before 'conda activate'
+
++ nextflow run /projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/isoSV.nf -work-dir /flashscratch/c-ferraa/isoSV/dev/work -resume
+[33mNextflow 25.04.2 is available - Please consider updating your version to it(B[m
+
+EPILOG
+--
+Job ID: 5490971
+Cluster: sumner2
+User/Group: c-ferraa/jaxuser
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:00:15
+CPU Efficiency: 57.69% of 00:00:26 core-walltime
+Job Wall-clock time: 00:00:13
+Memory Utilized: 438.32 MB
+Memory Efficiency: 21.40% of 2.00 GB
+--
+JobID           User      State      ExitCode  Partition  QOS    NodeList   CPUTime   MaxRSS   ReqTRES                           Submit               Start                End                  Elapsed
+5490971         c-ferraa  FAILED     1:0       compute    batch  sumner041  00:00:26           billing=1,cpu=1,mem=2048M,node=1  2025-05-14T16:51:46  2025-05-14T16:51:49  2025-05-14T16:52:02  00:00:13
+5490971.batch             FAILED     1:0                         sumner041  00:00:26  438.32M                                    2025-05-14T16:51:49  2025-05-14T16:51:49  2025-05-14T16:52:02  00:00:13
+5490971.extern            COMPLETED  0:0                         sumner041  00:00:28  0                                          2025-05-14T16:51:49  2025-05-14T16:51:49  2025-05-14T16:52:03  00:00:14

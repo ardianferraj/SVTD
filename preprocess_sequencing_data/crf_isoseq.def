@@ -1,0 +1,58 @@
+Bootstrap: docker
+From: continuumio/miniconda3:latest
+
+%post
+  echo "export PATH=/opt/conda/bin:$PATH" >> /etc/environment
+  export PATH=/opt/conda/bin:$PATH
+
+  ## Remove default channel
+  conda config --remove channels defaults
+
+  ## Add and enforce channel priority
+  conda config --add channels conda-forge
+  conda config --add channels bioconda
+  conda config --set channel_priority strict
+
+  ## python prereqs:
+  conda install -y -c conda-forge numpy cython
+
+  ## pacbio stuff:
+  conda install -y -c bioconda \
+    bax2bam \
+    bam2fastx \
+    pbccs \
+    pbbam \
+    lima \
+    isoseq3 \
+    pbmm2 \
+    gmap \
+    gffcompare
+
+  ## cDNA_Cupcake (for fusion_finder.py):
+  cd /opt
+  git clone https://github.com/Magdoll/cDNA_Cupcake.git
+  cd cDNA_Cupcake
+  git checkout main
+  python setup.py build
+  python setup.py install
+
+%runscript
+  echo 'Some available tools:'
+  samtools --version
+  echo -n 'bax2bam '
+  bax2bam --version
+  bam2fastq --version
+  bam2fasta --version
+  ccs --version
+  pbmerge --version
+  lima --version
+  isoseq3 --version
+  pbmm2 --version
+  gmap --version 2>&1 | grep 'GMAP version'
+  gffcompare --version
+  cd /opt/cDNA_Cupcake && echo -n 'cDNA_Cupcake: ' && git log -n 1 | head -n 1
+
+%labels
+  Description tools for isoseq3 analysis of PacBio long-read RNA-seq data
+  Author mitch.kostich@jax.org
+  Version 0.1.0

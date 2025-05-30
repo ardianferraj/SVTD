@@ -1,0 +1,84 @@
+/projects/csna/sv_ferraj/SVTD/repo/isoSV/rundir
+sumner096
+Wed May 14 04:57:09 PM EDT 2025
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ '[' -n '' ']'
+++ /usr/bin/tclsh /cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl bash load singularity
++ eval
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
+
+ N E X T F L O W   ~  version 25.04.1
+
+Launching `/projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/isoSV.nf` [berserk_dalembert] DSL2 - revision: 35679e1df8
+
+[-        ] ISOSEQ_CLUSTER  -
+[-        ] PBMM2_INDEX     -
+[-        ] PBMM2_ALIGN     -
+[-        ] ISOSEQ_COLLAPSE -
+Sample info: [CAST_M_striatum, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf]
+
+[c5/3c3917] ISO…_CLUSTER (CAST_M_striatum) | 1 of 1, cached: 1
+[-        ] PBMM2_INDEX                    -
+[-        ] PBMM2_ALIGN                    -
+[-        ] ISOSEQ_COLLAPSE                -
+Sample info: [CAST_M_striatum, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf]
+
+[c5/3c3917] ISO…_CLUSTER (CAST_M_striatum) | 1 of 1, cached: 1 ✔
+[1d/6719df] PBMM2_INDEX (1)                | 1 of 1, cached: 1 ✔
+[fc/b24ba3] PBMM2_ALIGN (CAST_M_striatum)  | 1 of 1, cached: 1 ✔
+[-        ] ISOSEQ_COLLAPSE                | 0 of 1
+Sample info: [CAST_M_striatum, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf]
+Alignment input: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/c5/3c3917bcec9ae7d88b610885fa1020/CAST_M_striatum.clustered.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa.mmi]
+Mapped BAM: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/fc/b24ba3ee3d0a5e42ac97ba4facacc7/CAST_M_striatum_mapped.bam]
+
+executor >  slurm (1)
+[c5/3c3917] ISO…_CLUSTER (CAST_M_striatum) | 1 of 1, cached: 1 ✔
+[1d/6719df] PBMM2_INDEX (1)                | 1 of 1, cached: 1 ✔
+[fc/b24ba3] PBMM2_ALIGN (CAST_M_striatum)  | 1 of 1, cached: 1 ✔
+[56/c0275d] ISO…COLLAPSE (CAST_M_striatum) | 0 of 1
+Sample info: [CAST_M_striatum, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf]
+Alignment input: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/c5/3c3917bcec9ae7d88b610885fa1020/CAST_M_striatum.clustered.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa.mmi]
+Mapped BAM: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/fc/b24ba3ee3d0a5e42ac97ba4facacc7/CAST_M_striatum_mapped.bam]
+
+executor >  slurm (1)
+[c5/3c3917] ISO…_CLUSTER (CAST_M_striatum) | 1 of 1, cached: 1 ✔
+[1d/6719df] PBMM2_INDEX (1)                | 1 of 1, cached: 1 ✔
+[fc/b24ba3] PBMM2_ALIGN (CAST_M_striatum)  | 1 of 1, cached: 1 ✔
+[56/c0275d] ISO…COLLAPSE (CAST_M_striatum) | 0 of 1
+Sample info: [CAST_M_striatum, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf]
+Alignment input: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/c5/3c3917bcec9ae7d88b610885fa1020/CAST_M_striatum.clustered.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa.mmi]
+Mapped BAM: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/fc/b24ba3ee3d0a5e42ac97ba4facacc7/CAST_M_striatum_mapped.bam]
+
+executor >  slurm (1)
+[c5/3c3917] ISO…_CLUSTER (CAST_M_striatum) | 1 of 1, cached: 1 ✔
+[1d/6719df] PBMM2_INDEX (1)                | 1 of 1, cached: 1 ✔
+[fc/b24ba3] PBMM2_ALIGN (CAST_M_striatum)  | 1 of 1, cached: 1 ✔
+[56/c0275d] ISO…COLLAPSE (CAST_M_striatum) | 1 of 1 ✔
+Sample info: [CAST_M_striatum, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf]
+Alignment input: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/c5/3c3917bcec9ae7d88b610885fa1020/CAST_M_striatum.clustered.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa.mmi]
+Mapped BAM: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/fc/b24ba3ee3d0a5e42ac97ba4facacc7/CAST_M_striatum_mapped.bam]
+Collapsed GFF: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/56/c0275d050776fb31c7e67189d3bc92/CAST_M_striatum_collapsed.gff]
+
+executor >  slurm (1)
+[c5/3c3917] ISO…_CLUSTER (CAST_M_striatum) | 1 of 1, cached: 1 ✔
+[1d/6719df] PBMM2_INDEX (1)                | 1 of 1, cached: 1 ✔
+[fc/b24ba3] PBMM2_ALIGN (CAST_M_striatum)  | 1 of 1, cached: 1 ✔
+[56/c0275d] ISO…COLLAPSE (CAST_M_striatum) | 1 of 1 ✔
+Sample info: [CAST_M_striatum, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf]
+Alignment input: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/c5/3c3917bcec9ae7d88b610885fa1020/CAST_M_striatum.clustered.bam, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa, /projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa.mmi]
+Mapped BAM: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/fc/b24ba3ee3d0a5e42ac97ba4facacc7/CAST_M_striatum_mapped.bam]
+Collapsed GFF: [CAST_M_striatum, /flashscratch/c-ferraa/isoSV/dev/work/56/c0275d050776fb31c7e67189d3bc92/CAST_M_striatum_collapsed.gff]
+

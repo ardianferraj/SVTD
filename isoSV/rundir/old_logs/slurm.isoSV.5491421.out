@@ -1,0 +1,34 @@
+/projects/csna/sv_ferraj/SVTD/repo/isoSV/rundir
+sumner042
+Wed May 14 07:09:49 PM EDT 2025
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ '[' -n '' ']'
+++ /usr/bin/tclsh /cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl bash load singularity
++ eval
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
+
+ N E X T F L O W   ~  version 25.04.1
+
+Launching `/projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/isoSV.nf` [distraught_meninsky] DSL2 - revision: 2bd11f1ba9
+
+Multi-channel output cannot be applied to operator subscribe for which argument is already provided
+
+ -- Check script '/projects/chesler-lab/csna/sv_ferraj/SVTD/repo/isoSV/isoSV.nf' at line: 88 or see '.nextflow.log' file for more details
+
+[-        ] ISOSEQ_CLUSTER  -
+[-        ] PBMM2_INDEX     -
+[-        ] PBMM2_ALIGN     -
+[-        ] ISOSEQ_COLLAPSE -
