@@ -3,20 +3,34 @@ From: condaforge/mambaforge:23.3.1-1
 
 %environment
     export DEBIAN_FRONTEND=noninteractive
-    export PATH=/opt/conda/bin:$PATH
+    export PATH=/opt/conda/bin:/opt/SQANTI3:$PATH
+    export PYTHONPATH=/opt/SQANTI3:$PYTHONPATH
 
 %post
     echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
-    # Install tools
+    # Install tools including all dependencies via conda
     mamba install -y -c bioconda -c conda-forge \
         isoseq lima pbmm2 pbpigeon minimap2 samtools star kallisto desalt \
-        bx-python biopython bcbio-gff cython numpy pysam pybedtools psutil pandas scipy pybedtools
+        bx-python biopython bcbio-gff cython numpy pysam pybedtools psutil pandas scipy \
+        gffread ucsc-gtftogenepred
 
-    # Clone SQANTI3
+    # Download and extract SQANTI3 v5.4 (official release)
     cd /opt
-    git clone https://github.com/ConesaLab/SQANTI3.git
+    wget -O SQANTI3_v5.4.zip https://github.com/ConesaLab/SQANTI3/archive/refs/tags/v5.4.zip
+    python -c "import zipfile; zipfile.ZipFile('SQANTI3_v5.4.zip').extractall('.')"
+    
+    # Rename the extracted directory
+    mv SQANTI3-5.4 SQANTI3
+    
+    # Setup SQANTI3 - use conda-installed gtfToGenePred instead of downloading
     cd SQANTI3
-    git checkout v5.4
-    wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/gtfToGenePred -P src/utilities/
-    chmod +x src/utilities/gtfToGenePred
+    # Remove any existing version and link to conda version
+    rm -f src/utilities/gtfToGenePred
+    ln -sf /opt/conda/bin/gtfToGenePred src/utilities/gtfToGenePred
+    
+    # Verify SQANTI3 structure and create any missing directories
+    mkdir -p example/rescue_ml/logs
+    
+    # Clean up
+    rm /opt/SQANTI3_v5.4.zip

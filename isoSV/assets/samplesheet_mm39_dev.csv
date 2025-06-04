@@ -1,2 +1,2 @@
-sampleID,flnc_bam,reference,reference_gtf
-CAST_M_striatum,/projects/chesler-lab/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam,/projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa,/projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf
+sampleID,flnc_bam,reference,reference_gtf,shortread_fofn
+CAST_M_striatum,/projects/csna/sv_ferraj/SVTD/data/sequencing/isoseq/striatum/merged/bam/CAST_M_striatum.hifi.merged.bam,/projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/mm39.fa,/projects/chesler-lab/csna/sv_ferraj/SVTD/data/ref/mm39/gencode.vM36.annotation.gtf,/projects/csna/sv_ferraj/SVTD/assets/shortread_fofn/CAST_M_striatum_shortreads.fofn
